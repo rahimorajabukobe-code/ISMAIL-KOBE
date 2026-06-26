@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #000;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+
+/* HEADER */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+
+/* HERO */
+
+.hero {
+    height: 100vh;
+    background: url("../img/hero-bg.jpg") center/cover fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 60px;
+}
+
+.hero p {
+    color: #ccc;
+    margin: 15px 0;
+}
+
+button {
+    padding: 12px 25px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+/* COLEÇÃO */
+
+.colecao {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.grid img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #111;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card p {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+
+/* HISTÓRIA */
+
+.historia {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+    background: #0a0a0a;
+}
+
+.historia img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.texto {
+    max-width: 400px;
+}
+
+
+/* LIFESTYLE */
+
+.lifestyle {
+    text-align: center;
+    padding: 80px;
+}
+
+.lifestyle img {
+    width: 60%;
+    border-radius: 10px;
+}
+
+.lifestyle p {
+    margin-top: 20px;
+    color: #ccc;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: #888;
+}
